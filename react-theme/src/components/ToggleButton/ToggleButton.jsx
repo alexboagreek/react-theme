@@ -9,7 +9,7 @@ function ToggleButton() {
   
     return ( 
         <div onClick={ toggleTheme }
-            className= "btn-toggle"
+            className= { theme ? 'btn-toggle goLight' : 'btn-toggle goDark' }
             >
                 { theme ? "Dark" : "Light" }
             
